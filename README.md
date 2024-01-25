@@ -5,9 +5,9 @@ My aim for creating my own Fork is to use the code for certain functionalites an
 A very rough first draft of my personal 'blue sky thinking' resulted in the idea to build a type of budget calculator that would empower Users to invest in Green companies more wisely. 
 Users woul have the abilty to:
 
-   - input a specific amount of money as their budget for investing in Green companies by buying shares and/or divesting by selling them.
-   - to calculate how much money the User would gain or lose by investing their budget in various Green companies.
-   - View in real-time the performance of any given company via linking to external websites, for example: https://live.euronext.com/en/product/indices/QS0011131735-XAMS
+- input a specific amount of money as their budget for investing in Green companies by buying shares and/or divesting by selling them.
+- to calculate how much money the User would gain or lose by investing their budget in various Green companies.
+- View in real-time the performance of any given company via linking to external websites, for example: https://live.euronext.com/en/product/indices/QS0011131735-XAMS
 
 
  
