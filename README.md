@@ -3,7 +3,7 @@ This project, **'GR€€NV€STM€NT$'**, has been Forked from my hackathon te
 My aim for creating my own Fork is to use the code for certain functionalites and features of the original progect to help me to experiment with acheiving the main site goal of supporting Users to invest in 'Green' companies that only use sustainable, carbon neutral and circular economy business models. 
 
 A very rough first draft of my personal 'blue sky thinking' resulted in the idea to build a type of budget calculator that would empower Users to invest in Green companies more wisely. 
-Users woul have the abilty to:
+Users would have the abilty to:
 
 - input a specific amount of money as their budget for investing in Green companies by buying shares and/or divesting by selling them.
 - to calculate how much money the User would gain or lose by investing their budget in various Green companies.
@@ -11,8 +11,10 @@ Users woul have the abilty to:
 
 
  
+<br>
 
-![ThriveWallet brandname](./static/media/Version3_LinearBrandNameandLogo.png)
+
+ ![ThriveWallet brandname](./static/media/Version3_LinearBrandNameandLogo.png)
 ## [*Your catalyst for financial growth and success*](https://thrive-wallet-b5a54babd69b.herokuapp.com/ "ThriveWallet")
 
 ## Intro
