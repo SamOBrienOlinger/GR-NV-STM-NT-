@@ -119,11 +119,163 @@ You can access our project on GitHub [here](https://github.com/rstan-dev/jan24-h
 
 ## Known Issues
 
+ Responsiveness must be improved for smaller devices. Given the short timeframe of the hackathon and considering that the team needed to work on all aspects of the app as quickly as possible together, the app was desktop-first designed from the outset.
+
+
 ## Credits
 The following resources were used:
 1. [Google](https://www.google.com/ "Google")
 2. [ChatGPT-3.5 and ChatGPT-4](https://chat.openai.com/ "ChatGPT")
 3. [The Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=the%20code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=635720257674&hsa_src=g&hsa_tgt=kwd-572567981978&hsa_kw=the%20code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAwbitBhDIARIsABfFYILuXWM0fanFTlFcwI7ku6NJMSLl7B0mwo44q2y6L7BWgHUs3N8FYJAaAkKUEALw_wcB "Code Institute") course projects
+4. The footer element and about-us.html page were adapted from a previous hackathon project I worked on. The repository can be found [HERE](https://github.com/kpetrauskas92/team9-hackathon-december). 
+
+  - The specfic code block that provided a starting point for the Footer is below. However, given the nature of the project the decision was taken to remove the social media features becuase it was felt that few, if anyone, would want to share their personal finances on social media platforms.
+
+
+    <!-- Footer Section -->
+        <footer>
+          <p>&copy; 2023 The North Pole Nodes</p>
+        </footer>
+        <footer class="text-center text-lg-start text-white" style="background-color: #640404">
+          <section class="mb-4 text-center social-links">
+              <p>Share this interactive card:</p>
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://facebook.com" target="_blank"
+              rel="noopener" aria-label="Share on Facebook">
+              <i class="fab fa-facebook">
+              </i>
+          </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://twitter.com" target="_blank"
+              rel="noopener" aria-label="Share on Twitter">
+              <i class="fab fa-twitter-square">
+              </i>
+          </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://youtube.com" target="_blank"
+              rel="noopener" aria-label="Share on YouTube">
+              <i class="fab fa-youtube-square">
+              </i>
+          </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://instagram.com" target="_blank"
+              rel="noopener" aria-label="Share on Instagram">
+              <i class="fab fa-instagram">
+              </i>
+          </a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button" href="https://wa.me" target="_blank"
+              rel="noopener" aria-label="Share on WhatsApp">
+              <i class="fa-brands fa-whatsapp">
+              </i>
+          </a>
+
+          <a class="btn btn-outline-light btn-floating m-1" role="button" href="#"
+              onclick="copyLink('https://team9hackathon.com/interactive-card')" aria-label="Copy Link to Share">
+              <i class="fa-solid fa-link">
+              </i>
+          </a>
+
+          <input class="m-1" type="text" id="shareLink" readonly>
+          </section>
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                  © 2023 Copyright:
+                  <a class="text-white" href="https://github.com/kpetrauskas92/team9-hackathon-december">The North Pole Nodes</a>
+              </div>
+          </footer>
+
+ 
+  - The code from this same project below helped develop the About Us feature noted above. Again, due to various reasons such as time constraints and a different number of members on the team, much of this code was either changed or removed.
+
+         <div class="container main-container my-auto">
+            <div class="row text-center">
+                <div class="col-12 py-4">
+                    <h1>Meet the North Pole Nodes!</h1>
+                </div>
+      
+              <!-- Top row: -->
+              
+              <div class=" col-md-6 col-sm-12" id="amir">
+                <a href="https://www.linkedin.com/in/amirhosseinbayani/">
+                    <img src="assets/images/images-about-us/v2/amir.jpg" alt="Amir's Image" class="img-fluid rounded-circle avatar">
+                </a>
+                <p class="about-card-text customize-button w-100">
+                    Amirhossein
+                    <a href="https://www.linkedin.com/in/amirhosseinbayani/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/teman67">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </p>
+            </div>
+    
+              <div class=" col-md-6 col-sm-12" id="armando">
+                  <a href="https://www.linkedin.com/in/armandourquiola/">
+                      <img src="assets/images/images-about-us/v2/armando.jpg" alt="Armando's Image" class="img-fluid rounded-circle avatar">
+                  </a>
+                  <p class="about-card-text customize-button w-100">Armando
+                    <a href="https://www.linkedin.com/in/armandourquiola/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/patchamama">
+                        <i class="fab fa-github"></i>
+                    </a>
+                  </p>
+              </div>
+              <div class=" col-md-6 col-sm-12" id="karolis">
+                  <a href="https://www.linkedin.com/in/pkarolisdev/">  
+                      <img src="assets/images/images-about-us/v2/karolis.jpg" alt="Karolis's Image" class="img-fluid rounded-circle avatar">
+                  </a>
+                  <p class="about-card-text customize-button w-100">Karolis
+                    <a href="https://www.linkedin.com/in/pkarolisdev/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/kpetrauskas92">
+                        <i class="fab fa-github"></i>
+                    </a>
+                  </p>
+              </div>
+      
+              <!-- Bottom row: -->
+              <div class=" col-md-6 col-sm-12" id="sam">
+                  <a href="https://www.linkedin.com/in/sam-o-brien-olinger-b658283a/">
+                      <img src="assets/images/images-about-us/v2/sam.jpg" alt="Sam's Image" class="img-fluid rounded-circle avatar">
+                  </a>
+                  <p class="about-card-text customize-button w-100">Sam
+                    <a href="https://www.linkedin.com/in/sam-o-brien-olinger-b658283a/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/SamOBrienOlinger">
+                        <i class="fab fa-github"></i>
+                    </a>
+                  </p>
+              </div>
+              <div class=" col-md-6 col-sm-12" id="taher">
+                <a href="https://www.linkedin.com/in/taher-m/">
+                    <img src="assets/images/images-about-us/v2/taher.jpg" alt="Taher's Image" class="img-fluid rounded-circle avatar">
+                </a>
+                <p class="about-card-text customize-button w-100">Taher
+                    <a href="https://www.linkedin.com/in/taher-m/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/TaherCCG">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="d-none d-lg-block col-md-6 col-sm-12" id="santa">
+                <img src="assets/images/images-about-us/v2/santa.png" alt="santa" class="img-fluid img-fluid rounded-circle avatar">
+            <p class="about-card-text customize-button w-100">Santa</p>
+    
+        </div>
+          </div>
+      </div>
+
+  
+
+
+
 
 The BUDJ€T€€RS team:
 - [SamOBrienOlinger](https://github.com/SamOBrienOlinger)
