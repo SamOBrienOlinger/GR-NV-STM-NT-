@@ -16,7 +16,7 @@ A personal development fork of the Budget Busters hackathon project, exploring a
 
 ## Getting started
 
-Requires Python, pip and a virtual environment. Dependency pins in older projects may need a compatible Python environment; this README does not upgrade them.
+Requires Git, Python, pip and a virtual environment. Dependency pins in older projects may need a compatible Python environment; this README does not upgrade them.
 
 ```bash
 git clone https://github.com/SamOBrienOlinger/GR-NV-STM-NT-.git
