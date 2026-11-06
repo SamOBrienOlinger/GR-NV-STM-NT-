@@ -18,26 +18,7 @@ A personal development fork of the Budget Busters hackathon project, exploring a
 
 The budgeting screens keep a total budget and a map of expenses in the Django session. Each expense entry is a running total keyed by the submitted category display name. The form gets its category options from the database. The name is a text key in session data, so the association has no foreign-key constraint. The Django `Budget` model also defines a JSON `expenses` field. [Category and budget models](accounts/models.py) · [Budget form](templates/accounts/profile.html) · [Budget views](accounts/views.py) · [Calculated totals](accounts/contexts.py)
 
-```mermaid
-erDiagram
-    accTitle: Budget session, expense totals and category options
-    accDescr: Each budget session stores an expense total per submitted category name. The category table supplies the form options.
-    "Budget Session" ||--o{ "Expense Total" : stores
-    Category }o..o{ "Expense Total" : "shares label"
-
-    "Budget Session" {
-        int total_budget
-        map expenses
-    }
-    "Expense Total" {
-        string category_name
-        int amount
-    }
-    Category {
-        string name
-        string friendly_name
-    }
-```
+[![Each budget session stores an expense total per submitted category name. The category table supplies the form options.](docs/diagrams/budget-session-expense-totals-and-category-options.svg)](docs/diagrams/budget-session-expense-totals-and-category-options.svg)
 
 ## Getting started
 
