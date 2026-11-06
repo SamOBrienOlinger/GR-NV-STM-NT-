@@ -4,7 +4,7 @@ A personal development fork of the Budget Busters hackathon project, exploring a
 
 **Python · Django**
 
-[Getting started](#getting-started) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
+[Getting started](#getting-started) · [Data model](#entity-relationship-diagram) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
 
 ## What you can explore
 
@@ -13,6 +13,31 @@ A personal development fork of the Budget Busters hackathon project, exploring a
 - The original hackathon design and testing record.
 
 > **Project notes:** The green-investment concept describes the intended direction of this fork. The committed application is the inherited budgeting project; it does not establish a completed investment service.
+
+## Entity relationship diagram
+
+The budgeting screens keep a total budget and a map of expenses in the Django session. Each expense entry is a running total keyed by the submitted category display name. The form gets its category options from the database. The name is a text key in session data, so the association has no foreign-key constraint. The Django `Budget` model also defines a JSON `expenses` field. [Category and budget models](accounts/models.py) · [Budget form](templates/accounts/profile.html) · [Budget views](accounts/views.py) · [Calculated totals](accounts/contexts.py)
+
+```mermaid
+erDiagram
+    accTitle: Budget session, expense totals and category options
+    accDescr: Each budget session stores an expense total per submitted category name. The category table supplies the form options.
+    "Budget Session" ||--o{ "Expense Total" : stores
+    Category }o..o{ "Expense Total" : "shares label"
+
+    "Budget Session" {
+        int total_budget
+        map expenses
+    }
+    "Expense Total" {
+        string category_name
+        int amount
+    }
+    Category {
+        string name
+        string friendly_name
+    }
+```
 
 ## Getting started
 
